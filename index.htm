@@ -2,10 +2,31 @@
 <html>
 <head>
 	<title>camelCasa</title>
+	<style>
+	@font-face {
+         font-family: 'FontinRegular';
+         src: url('fonts/Fontin-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+	}
+	@font-face {
+         font-family: 'DeliciousRegular';
+         src: url('fonts/Delicious-Roman.otf') format('opentype');
+         font-weight: normal;
+         font-style: normal;
+	}
+	html, body {width: 100%; margin: 0; padding: 0; }
+	.fontSerif {font-family: 'FontinRegular', 'Times', serif;}
+	.fontSans {font-family: 'DeliciousRegular', 'Arial', sans-serif; font-size: 1.3em;}
+	.center { margin: 0 auto;}
+	#logo {margin-top: 100px; width: 100%; text-align: center;}
+	#container {width: 960px; }
+	</style>
 </head>
 <body>
-	
-<h1 id="camelcasa">camelCasa</h1>
+<div class="center fontSans" id="container">
+<div class="center" id="logo"><img src="images/camelCasa.svg" /></div>
+<h1 class="fontSerif">camelCasa</h1>
 	<p>
 		camelCasa is the residence of 
 		Charles "<a href="http://cceckman.com">@cceckman</a>" Eckman, 
@@ -16,6 +37,7 @@
 		We're going to do some cool things once we're settled in, like automation, networking, and Rube Goldberg machines. 
 		Keep an eye on this site, and at the accompanying <a href="http://github.com/camelCasa">Github organization</a>, for details.
 	</p>
+	</div>
 </body>
 </html>
 
